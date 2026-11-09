@@ -1,0 +1,20 @@
+# Secrets - never commit these
+.env
+*.key
+secrets/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Raw experience reports may contain personal data - keep local only.
+# Only the extracted table (course names + decisions) goes into git.
+data/raw_reports/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
