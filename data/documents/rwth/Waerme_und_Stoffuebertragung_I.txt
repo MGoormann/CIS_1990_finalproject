@@ -1,0 +1,17 @@
+Heat and Mass Transfer I
+
+The lecture imparts fundamental knowledge of the different mechanisms of heat and mass transfer, in order to be able to categorize and compare its influencing variables.
+
+The students learn to identify and depict the most important phenomena of heat and mass transfer, to explain the corresponding processes and to evaluate them using appropriate dimensionless numbers. For this, different kinds of balances are introduced and the steps necessary for the mathematical description and analytical solution of typical problems are discussed in detail. Another inherent part is the assessment of different simplifications, which are significant for the characterization of thermo technical systems.
+
+The lecture conveys the required skills to comprehend and analyze even complex conditions and to evaluate them with regard to the solution of thermo technical problems.
+
+Content
+
+Thermal radiation and its properties
+Fundamentals of computation for the radiative heat exchange between two bodies
+Transient and intransient thermal conduction with and without heat sources
+Techniques for the mathematical description of temperature fields
+Thermal conduction in laminar und turbulent flows
+Analogy between heat and mass transfer
+The dimensionless numbers established in heat and mass transfer

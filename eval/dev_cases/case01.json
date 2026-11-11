@@ -1,0 +1,7 @@
+{
+  "id": "case01",
+  "penn_doc": "penn/MEAM3330.txt",
+  "rwth_doc": "rwth/Waerme_und_Stoffuebertragung_I.txt",
+  "expected_recommendation": "recognize",
+  "notes": "MEAM 3330 recognized as Waerme- und Stoffuebertragung (I), Maschinenbau B.Sc., Spring 2026 (two reports)"
+}

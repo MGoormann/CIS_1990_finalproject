@@ -1,0 +1,21 @@
+Modulbezeichnung: Quantitative Methoden der Wirtschaftswissenschaften
+ggf. Kürzel:
+ggf. Untertitel:
+ggf. Lehrveranstaltungen: Quantitative Methoden der Wirtschaftswissenschaften
+Kreditpunkte: 5 CP (Ah/30=CP)
+Zurodnung zu Curriculum: Bachelor Wirtschaftsingenieurwesen (alle Fachrichtungen) (Pflichtveranstaltung, 2. Semester)
+Semesteranzahl: 1
+Name des Instituts/Lehrstuhls Deutsche Post Lehrstuhl für Optimierung von Distributionsnetzwerken
+Lehrform / SWS Vorlesung: 2 SWS Übung: 2 SWS
+Arbeitsaufwand: Präsenzstudium: 42 Ah (4 SWS * 10,5)
+(pro Semester bei 15 Eigenstudium: 108 Ah
+Semesterwochen Work-Load: 150 Ah
+à 45 Minuten)
+Voraussetzungen: keine
+Lernziele / Kompetenzen: Kennenlernen von Grundlagen, Methoden und Algorithmen der Linearen Optimierung, der Diskreten und Kombinatorischen Optimierung und der Nichtlinearen Optimierung Erwerb von Fähigkeiten und Fertigkeiten, um Probleme der Produktionsplanung und der Logistik als Optimierungsprobleme zu modellieren und sowohl manuell als auch unter Verwendung eines Modellierungstools (Software) computergestützt zu lösen.
+Inhalt: Lineare Optimierung (Simplexmethode, Dualität, MODI-Verfahren), Diskrete und Kombinatorische Optimierung (Zuordnungsproblem, Rucksackproblem, Traveling Salesman Problem, VRP, Branch and Bound), Nichtlineare Optimierung (Kuhn-Tucker-Bedingungen, Lagrangefunktion, Numerische Methoden)
+Studien-/Prüfungsleistungen: Klausur (90 Minuten)
+Sprache: deutsch
+Medienformen:
+Soft-Skills Angeleitete Arbeit in Kleingruppen
+Literatur: Zimmermann, H.-J., Operations Research: Methoden und Modelle. Für Wirtschaftsingenieure, Betriebswirte, Informatiker, Vieweg Verlag, 1. Auflage, 2005

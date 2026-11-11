@@ -1,0 +1,9 @@
+MEAM 3330 Heat and Mass Transfer
+
+This course covers fundamentals of heat and mass transfer and applications to practical problems in energy conversion and conservation. Emphasis will be on developing a physical and analytical understanding of conductive, convective, and radiative heat transfer, as well as design of heat exchangers and heat transfer with phase change. Topics covered will include: types of heat transfer processes, their relative importance, and the interactions between them, solutions of steady state and transient state conduction, emission and absorption of radiation by real surfaces and radiative transfer between surfaces, heat transfer by forced and natural convection owing to flow around bodies and through ducts, analytical solutions for some sample cases and applications of correlations for engineering problems. Students will develop an ability to apply governing principles and physical intuition to solve problems.
+
+Spring
+
+Prerequisite: MEAM 2030 AND MEAM 3020
+
+1 Course Unit

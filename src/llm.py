@@ -17,7 +17,10 @@ load_dotenv()
 
 # Set GEMINI_MODEL in .env to change the model. Check which models your free tier
 # supports (structured JSON output is required) before relying on this default.
-DEFAULT_MODEL = "gemini-2.5-flash"
+# gemini-2.5-flash returned 404 for new users and gemini-3.8-flash returned 503 (overloaded)
+# on 2026-11-11; gemini-3.5-flash worked.
+DEFAULT_MODEL = "gemini-3.5-flash"
+REQUEST_TIMEOUT_MS = 90_000  # a hung request must fail (and be retried), not block forever
 
 
 @dataclass
@@ -40,7 +43,9 @@ def _get_client() -> genai.Client:
         key = os.environ.get("GEMINI_API_KEY")
         if not key:
             raise RuntimeError("GEMINI_API_KEY is not set. Put it in .env (see .env.example).")
-        _client = genai.Client(api_key=key)
+        _client = genai.Client(
+            api_key=key, http_options=types.HttpOptions(timeout=REQUEST_TIMEOUT_MS)
+        )
     return _client
 
 

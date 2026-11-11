@@ -1,0 +1,7 @@
+{
+  "id": "case02",
+  "penn_doc": "penn/OIDD2210.txt",
+  "rwth_doc": "rwth/Quantitative_Methoden_der_Wirtschaftswissenschaften.txt",
+  "expected_recommendation": "reject",
+  "notes": "OIDD 2210 not endorsed for Quantitative Methoden der WiWi (Pflicht WiWi), SPUe Fall 2026"
+}
