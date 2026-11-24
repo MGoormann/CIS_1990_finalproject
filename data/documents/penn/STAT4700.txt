@@ -1,0 +1,9 @@
+STAT 4700 Data Analytics and Statistical Computing
+
+This course will introduce a high-level programming language, called R, that is widely used for statistical data analysis. Using R, we will study and practice the following methodologies: data cleaning, feature extraction; web scrubbing, text analysis; data visualization; fitting statistical models; simulation of probability distributions and statistical models; statistical inference methods that use simulations (bootstrap, permutation tests). Prerequisite: Waiving the Statistics Core completely if prerequisites are not met. This course may be taken concurrently with the prerequisite with instructor permission.
+
+Fall or Spring
+
+Prerequisite: (STAT 1010 AND STAT 1020) OR (STAT 1110 AND STAT 1120) OR STAT 4310 OR (ECON 2300 AND ECON 2310)
+
+1 Course Unit

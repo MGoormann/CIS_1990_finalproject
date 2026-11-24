@@ -1,0 +1,23 @@
+Flugdynamik (4013370)
+
+Inhalt:
+1. EINFÜHRUNG: Grundbegriffe
+2. GRUNDLAGEN: Bezeichnungen, Koordinatensysteme
+3. Luftkräfte, Luftkraftmomente
+4. STATIONÄRE LÄNGSBEWEGUNG: Statische Längsstabilität bei festem Ruder
+5. Ruderausschläge, Leitwerksauslegung
+6. Statische Längsstabilität bei freiem Ruder, Manöverstabilität
+7. Steuerung
+8. STATIONÄRE SEITENBEWEGUNG: Gier- und Rollbewegung, Steuerung
+9. Kopplungen, Stationäre Flugzustände
+10. BEWEGUNGSGLEICHUNGEN: Herleitungen
+11. Vereinfachungen, Linearisierung
+12. DYNAMIK DER LÄNGSBEWEGUNG: Eigenverhalten
+13. Führungs- und Störverhalten
+14. DYNAMIK DER SEITENBEWEGUNG: Eigen-, Führungs- und Störverhalten
+15. FLUGEIGENSCHAFTSFORDERUNGEN: Längsbewegung, Seitenbewegung
+
+Lernziele:
+Die Studierenden kennen und verstehen die Grundbegriffe und Grundgleichungen zur Untersuchung der Stabilität, Steuerbarkeit und Störanfälligkeit eines Flugzeugs (Flugeigenschaften, Flugdynamik)
+Sie sind in der Lage, diese Kenntnisse bei einfachen Aufgaben der Flugeigenschaftsanalyse oder des Flugzeugentwurfs bei vorgegebenen Flugeigenschafts-Anforderungen anzuwenden
+Die Studierenden können die Eigenschaften unterschiedlicher Flugzeugkonfigurationen bezüglich Stabilität und Manövrierfähigkeit beurteilen

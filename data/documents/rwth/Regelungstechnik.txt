@@ -1,0 +1,32 @@
+Regelungstechnik (4012555)
+
+Inhalt:
+1. Einführung: Steuerung und Regelung; Grundstruktur des Regelkreises; Beispiele
+2. Modellbildung: Aufstellen von Differentialgleichungen, Zustandsraum, Wirkungsplan
+3. Linearisierung: Arbeitspunkte, Linearisieren von Differentialgleichungen, Stabilität
+4. Verhalten von Systemen: homogene Lösung, charakteristisches Polynom, Eigenwerte
+5. Verhalten bei Anregung: Übergangsfunktion, Gewichtsfunktion, Faltung, Laplace-Transformation, Übertragungsfunktion, Grenzwertsätze
+6. Verhalten bei sinusförmiger Anregung: Frequenzgang, Ortskurve, Bode-Diagramm, Fourier-Transformation, Filter
+7. Lineare Regelkreisglieder: Verschaltung von Systemen, Zerlegung von Systemen, Grundlegende Reglertypen, Verzögerungsglieder
+8. Lineare Regelkreisglieder: Weitere Kombinationen, Totzeitglieder, Minimalphasigkeit, Systemidentifikation
+9. Stabilitätsprüfung: Algebraische Stabilitätskriterien, Nyquist-Kriterium, Amplituden- und Phasenreserve
+10. Reglerentwurf: Gütemaße, Statische Auslegung, Einstellregeln, Reglerentwurf im Bode-Diagramm
+11. Reglerentwurf: Zustandsregler, Steuerbarkeit, Beobachbarkeit, Zustandsbeobachter
+12. Vermaschte Regelkreise: Vorsteuerung, Kaskadierte Regelkreise, Störgrößenaufschaltung
+13. Zeitdiskrete Systeme: Zeitdiskreter Zustandsraum, Stabilität, Quasikontinuierliche Stabilitätsbetrachtung
+14. Kalmanfilter: Zeitdiskrete Systemidentifikation, Kalmanfilter
+
+Wissen und Verstehen:
+Nach erfolgreicher Teilnahme an der Veranstaltung kennen die Studierenden…
+• die grundlegende Aufgabenstellung der Regelungstechnik sowie den Unterschied zwischen Steuerung und Regelung
+• die Grundbegriffe und Werkzeuge zur Beschreibung und Analyse von dynamischen Systemen sowie deren Vor- und Nachteile
+• verschiedene Verfahren zur Prüfung der Stabilität eines Systems
+• unterschiedliche Methoden des Reglerentwurfs für lineare Systeme
+
+Fertigkeiten und Kompetenzen:
+Nach erfolgreicher Teilnahme an der Veranstaltung sind die Studierenden in der Lage...
+• für ein gegebenes technisches System ein für regelungstechnische Zwecke geeignetes dynamisches Modell zu formulieren
+• Lineare Systeme in diversen Beschreibungsformen zu analysieren und zu bewerten
+• zwischen den Beschreibungsformen für lineare Systeme geeignet zu wechseln und begründet die Form auszuwählen, die für die verfolgten Ziele am geeignetsten ist.
+• die Stabilität eines Systems zu ermitteln
+• anhand vorgegebener Kriterien den Entwurf eines Reglers selbständig durchzuführen

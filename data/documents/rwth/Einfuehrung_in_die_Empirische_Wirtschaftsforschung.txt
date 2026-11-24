@@ -1,0 +1,13 @@
+Introduction to Empirical Economic Research
+
+Course Content
+
+The course begins with a review of key concepts and theorems from algebra and statistics, which are essential for a deeper understanding of econometric methods.
+
+Next, the focus is on the linear regression model. Various estimation methods and their underlying assumptions are presented. The statistical properties of estimators are analyzed, and inference methods such as hypothesis testing and confidence intervals are covered. Possible violations of model assumptions and their consequences are also discussed. As a result of assumption violations, appropriate alternative estimation methods are introduced.
+
+Building on this, the course covers widely used nonlinear regression models, particularly for binary data. Furthermore, fundamental estimation techniques for large datasets with many observations and/or regressors are presented.
+
+In addition to the theoretical foundation, a special emphasis is placed on practical applications. Empirical applications demonstrate the relevance and applicability of the methods covered in real-world contexts.
+
+The course consists of a lecture, where the main concepts are introduced, and a tutorial, which provides exercises and applications to deepen the understanding of the material.

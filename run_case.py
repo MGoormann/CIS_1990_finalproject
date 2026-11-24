@@ -9,7 +9,7 @@ from src.pipeline import format_report, run_pipeline
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run the credit-transfer agent on one case.")
-    parser.add_argument("case_id", help="name of a file in eval/dev_cases/ (without .json)")
+    parser.add_argument("case_id", help="a case_id from eval/cases.csv, for example case01")
     args = parser.parse_args()
 
     case = load_case(args.case_id)

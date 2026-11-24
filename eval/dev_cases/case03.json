@@ -1,7 +1,0 @@
-{
-  "id": "case03",
-  "penn_doc": "penn/ESE3040.txt",
-  "rwth_doc": "rwth/Quantitative_Methoden_der_Wirtschaftswissenschaften.txt",
-  "expected_recommendation": "recognize",
-  "notes": "ESE 3040 approved for Quantitative Methoden der WiWi (5 CP), SPUe Fall 2026"
-}

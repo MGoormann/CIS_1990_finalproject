@@ -1,6 +1,5 @@
 """Loading course documents and eval cases from disk."""
 
-import json
 import re
 import shutil
 import subprocess
@@ -9,7 +8,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DOCUMENTS_DIR = ROOT / "data" / "documents"
-DEV_CASES_DIR = ROOT / "eval" / "dev_cases"
 
 
 class _TextExtractor(HTMLParser):
@@ -55,17 +53,7 @@ def load_document(relative_path: str) -> str:
 
 
 def load_case(case_id: str) -> dict:
-    """Load eval/dev_cases/<case_id>.json.
+    """Load one case from eval/cases.csv (the single place where cases are defined)."""
+    from .cases import load_case as _load_case
 
-    Expected fields: id, penn_doc, rwth_doc (paths relative to data/documents/),
-    expected_recommendation (recognize | partial | reject | not_enough_information),
-    and optionally notes.
-    """
-    path = DEV_CASES_DIR / f"{case_id}.json"
-    if not path.is_file():
-        raise FileNotFoundError(f"Case file not found: {path}")
-    case = json.loads(path.read_text(encoding="utf-8"))
-    for field in ("id", "penn_doc", "rwth_doc", "expected_recommendation"):
-        if field not in case:
-            raise ValueError(f"Case {case_id} is missing the field '{field}'.")
-    return case
+    return _load_case(case_id)

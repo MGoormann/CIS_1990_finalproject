@@ -1,0 +1,7 @@
+MEAM 3200 Intro to Mechanical and Mechatronic Systems
+
+This course introduces topics in the design and analysis of modern mechanical systems. The course will cover concepts in mechanism design, kinematics, electronic circuits, motors and electromechanical systems, and measurement and filtering. Specific topics include kinematics of linkages, operational amplifiers, and interfacing with mechanical systems by programming microcontrollers.
+
+Prerequisite: MEAM 3470
+
+1 Course Unit

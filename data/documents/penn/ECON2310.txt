@@ -1,0 +1,9 @@
+ECON 2310 Econometric Methods and Models
+
+This course focuses on econometric techniques and their application in economic analysis and decision-making, building on ECON 2300 to incorporate the many regression complications that routinely occur in econometric environments. Micro-econometric complications include nonlinearity, non-normality, heteroskedasticity, limited dependent variables of various sorts, endogeneity and instrumental variables, and panel data. Macro-econometric topics include trend, seasonality, serial correlation, lagged dependent variables, structural change, dynamic heteroskedasticity, and optimal prediction. Students are required to perform several econometric analyses in a modern environment such as R.
+
+Fall or Spring
+
+Prerequisite: ECON 2100 AND (ECON 2300 OR (STAT 4300 AND STAT 1020)) AND (MATH 1400 OR MATH 1070) AND (MATH 1410 OR MATH 1510 OR MATH 1080)
+
+1 Course Unit

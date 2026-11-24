@@ -1,0 +1,21 @@
+case_id,split,penn_doc,rwth_doc,expected_recommendation,label_type,label_source,notes
+case01,dev,penn/MEAM3330.txt,rwth/Waerme_und_Stoffuebertragung_I.txt,recognize,real,Erfahrungsberichte 2026 (two reports),Recognized as Waerme- und Stoffuebertragung (I) for Maschinenbau B.Sc.
+case02,dev,penn/OIDD2210.txt,rwth/Quantitative_Methoden_der_Wirtschaftswissenschaften.txt,reject,real,Own SPUe Fall 2026 (not endorsed),Content overlaps strongly; the reason for the rejection may not be content
+case03,dev,penn/ESE3040.txt,rwth/Quantitative_Methoden_der_Wirtschaftswissenschaften.txt,recognize,real,Own SPUe Fall 2026 (approved 5 CP),
+case04,dev,penn/MGMT2230.txt,rwth/Regelungstechnik.txt,reject,constructed,clearly unrelated subjects,Business strategy vs control engineering
+case05,dev,penn/ECON2310.txt,rwth/Flugdynamik.txt,reject,constructed,clearly unrelated subjects,Econometrics vs flight dynamics
+case06,dev,penn/MEAM3330.txt,rwth/Einfuehrung_in_die_Empirische_Wirtschaftsforschung.txt,reject,constructed,clearly unrelated subjects,Heat transfer vs econometrics
+case07,dev,penn/STAT4700.txt,rwth/Elektromechanische_Antriebstechnik.txt,reject,constructed,clearly unrelated subjects,R data analysis vs mechanisms and drives
+case08,test,penn/ECON2310.txt,rwth/Einfuehrung_in_die_Empirische_Wirtschaftsforschung.txt,recognize,real,Own SPUe Fall 2026 (approved 5 CP),
+case09,test,penn/STAT4700.txt,rwth/Einfuehrung_in_die_Empirische_Wirtschaftsforschung.txt,reject,real,Own SPUe Fall 2026 (not endorsed),
+case10,test,penn/MEAM5430.txt,rwth/Flugdynamik.txt,recognize,real,Erfahrungsberichte Spring 2026,Recognized as Flugdynamik for Maschinenbau B.Sc.
+case11,test,penn/MGMT2230.txt,rwth/Waerme_und_Stoffuebertragung_I.txt,reject,constructed,clearly unrelated subjects,
+case12,test,penn/MGMT2230.txt,rwth/Elektromechanische_Antriebstechnik.txt,reject,constructed,clearly unrelated subjects,
+case13,test,penn/ECON2310.txt,rwth/Waerme_und_Stoffuebertragung_I.txt,reject,constructed,clearly unrelated subjects,
+case14,test,penn/ECON2310.txt,rwth/Regelungstechnik.txt,reject,constructed,clearly unrelated subjects,
+case15,test,penn/MEAM5430.txt,rwth/Einfuehrung_in_die_Empirische_Wirtschaftsforschung.txt,reject,constructed,clearly unrelated subjects,
+case16,test,penn/MEAM5430.txt,rwth/Quantitative_Methoden_der_Wirtschaftswissenschaften.txt,reject,constructed,clearly unrelated subjects,
+case17,test,penn/OIDD2210.txt,rwth/Waerme_und_Stoffuebertragung_I.txt,reject,constructed,clearly unrelated subjects,
+case18,test,penn/OIDD2210.txt,rwth/Elektromechanische_Antriebstechnik.txt,reject,constructed,clearly unrelated subjects,
+case19,test,penn/STAT4700.txt,rwth/Waerme_und_Stoffuebertragung_I.txt,reject,constructed,clearly unrelated subjects,
+case20,test,penn/ESE3040.txt,rwth/Flugdynamik.txt,reject,constructed,clearly unrelated subjects,

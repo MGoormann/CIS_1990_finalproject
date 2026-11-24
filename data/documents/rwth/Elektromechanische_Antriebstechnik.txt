@@ -1,0 +1,25 @@
+Elektromechanische Antriebstechnik (4013311)
+
+Inhalt:
+1. Einführung: Grundlegende Zusammenhänge, Anwendungsgebiete
+2. Beuformen von Getrieben: Getriebearten nach Hauptbaulementen, Getriebearten nach Funktion
+3. Kurbelgetriebe: Grundlagen und Anwendungen, Graphische Lageanalyse, Rechnerische Lageanalyse
+4. Kurbelgetriebe: Graphische Lagesynthese
+5. Kurbelgetriebe: Rechnerische Lagesynthese, Totlagensynthese
+6. Kurbelgetriebe: Geschwindigkeiten (rein graphische Verfahren)
+7. Kurbelgetriebe: Geschwindigkeiten (Euler/Satz der Relativgeschwindigkeit)
+8. Kurbelgetriebe: Beschleunigungen (Euler)
+9. Kurvengetriebe: Beschleunigungen (Satz der Relativbeschleunigungen)
+10. Kurvengetriebe: Grundlagen und Anwendungen, Bewegungsaufgabe und Übergangsfunktion, Kinematische Hauptabmessungen
+11. Kurvengetriebe: Hodographenverfahren, Verfahren nach Flocke, Führungs- und Arbeitskurve
+12. Elektrische Drehantriebe, Elektrische Linearantriebe
+13. Motormodelle, Regelung von elektrischen Antrieben
+14. Anwendungsbeispiel: Prinzipsynthese, Maßsynthese, Auslegung
+
+Fachbezogene Lernziele:
+• Die Studierenden haben ein tiefes Verständnis über die Grundlagen sowie Auslegung und Berechnung von elektromechanischen Antriebssystemen.
+• Die Studierenden sind in der Lage eine Bewegungsaufgabe zu erfassen, zu beschreiben und in einer Anforderungsliste an die Bewegungseinrichtung zusammenzufassen.
+• Die Studierenden kennen die wichtigsten Merkmale der verschiedenen elektrischen Antriebe und sind in der Lage, die für die jeweilige Antriebsaufgabe optimalen Antriebe auszuwählen.
+• Die Studierenden sind fähig, nach Antriebsauswahl mit Hilfe verfügbarer Katalogdaten die entsprechenden Berechnungen durchzuführen.
+• Die Studierenden kennen die wesentlichen Unterschiede und Einsatzarten von Kurbel- und Kurvengetrieben. Dabei sind sie in der Lage, die jeweils wesentlichen Einflussfaktoren aufzugliedern und hieraus geeignete Verfahren zur Getriebeauswahl anzuwenden.
+• Für die zu analysierenden Maschinen und Mechanismen leiten die Studierenden aus ihren gewonnenen Kenntnissen die erforderlichen Methoden und Verfahren zur Synthese und Analyse her. Sie sind damit in der Lage, mit ihrem erworbenen theoretischen Hintergrund, umfassende Fragestellungen und Probleme zur Auswahl und Auslegung von Bewegungseinrichtungen aus der Industrie zu beantworten und zu lösen.
