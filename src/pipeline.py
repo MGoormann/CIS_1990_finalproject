@@ -24,11 +24,16 @@ class OutcomeList(BaseModel):
     outcomes: list[str]
 
 
-class Judgment(BaseModel):
+class OutcomeJudgment(BaseModel):
+    outcome_number: int  # 1-based position in the numbered list that was sent
     verdict: Literal["full", "partial", "none"]
     rwth_quotes: list[str]
     penn_quotes: list[str]
     reasoning: str
+
+
+class JudgmentList(BaseModel):
+    judgments: list[OutcomeJudgment]
 
 
 @dataclass
@@ -66,10 +71,15 @@ def extract_outcomes(rwth_text: str) -> tuple[list[str], LLMResult]:
     return [o.strip() for o in result.parsed.outcomes if o.strip()], result
 
 
-def judge_outcome(outcome: str, rwth_text: str, penn_text: str) -> tuple[Judgment, LLMResult]:
+def judge_outcomes(
+    outcomes: list[str], rwth_text: str, penn_text: str
+) -> tuple[list[OutcomeJudgment], LLMResult]:
+    """Judge ALL outcomes in one model call (the free tier allows few requests per day)."""
+    numbered = "\n".join(f"{i}. {o}" for i, o in enumerate(outcomes, 1))
     prompt = (
-        "Does the Penn course cover this RWTH learning outcome?\n\n"
-        f"OUTCOME: {outcome}\n\n"
+        "Does the Penn course cover each of these RWTH learning outcomes?\n\n"
+        f"OUTCOMES:\n{numbered}\n\n"
+        "Give exactly one judgment per outcome and set outcome_number to its number. "
         "Answer 'full' only if the Penn text clearly shows the same content at a "
         "comparable level, 'partial' if it is only touched on or the level differs, "
         "'none' if there is no evidence. Support 'full' or 'partial' with at least one "
@@ -78,8 +88,18 @@ def judge_outcome(outcome: str, rwth_text: str, penn_text: str) -> tuple[Judgmen
         "evidence, give an empty penn_quotes list.\n\n"
         "=== RWTH MODULE ===\n" + rwth_text + "\n\n=== PENN COURSE ===\n" + penn_text
     )
-    result = call_llm(prompt, system=SYSTEM, schema=Judgment)
-    return result.parsed, result
+    result = call_llm(prompt, system=SYSTEM, schema=JudgmentList)
+    return result.parsed.judgments, result
+
+
+def align_judgments(n: int, judgments: list[OutcomeJudgment]) -> list[OutcomeJudgment | None]:
+    """Put the judgments in outcome order. An outcome with no judgment gets None; if the
+    model repeats a number, the first one wins; numbers outside 1..n are ignored."""
+    aligned: list[OutcomeJudgment | None] = [None] * n
+    for j in judgments:
+        if 1 <= j.outcome_number <= n and aligned[j.outcome_number - 1] is None:
+            aligned[j.outcome_number - 1] = j
+    return aligned
 
 
 def decide_recommendation(verdicts: list[str]) -> str:
@@ -114,9 +134,20 @@ def run_pipeline(penn_text: str, rwth_text: str) -> Report:
         notes.append("No learning outcomes found in the RWTH document.")
 
     results: list[OutcomeResult] = []
-    for outcome in outcomes:
-        judgment, call = judge_outcome(outcome, rwth_text, penn_text)
+    aligned: list[OutcomeJudgment | None] = []
+    if outcomes:
+        judgments, call = judge_outcomes(outcomes, rwth_text, penn_text)
         calls.append(call)
+        aligned = align_judgments(len(outcomes), judgments)
+
+    for outcome, judgment in zip(outcomes, aligned):
+        if judgment is None:
+            notes.append(f"No judgment returned for outcome: {outcome[:60]}")
+            results.append(
+                OutcomeResult(outcome, "missing", "unverified", [], [], [], [],
+                              "The model returned no judgment for this outcome.")
+            )
+            continue
         rwth_ok = check_quotes(judgment.rwth_quotes, rwth_text)
         penn_ok = check_quotes(judgment.penn_quotes, penn_text)
         verdict = judgment.verdict

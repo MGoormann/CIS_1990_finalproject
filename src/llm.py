@@ -17,9 +17,9 @@ load_dotenv()
 
 # Set GEMINI_MODEL in .env to change the model. Check which models your free tier
 # supports (structured JSON output is required) before relying on this default.
-# gemini-2.5-flash returned 404 for new users and gemini-3.8-flash returned 503 (overloaded)
-# on 2026-11-11; gemini-3.5-flash worked.
-DEFAULT_MODEL = "gemini-3.5-flash"
+# Free-tier notes (2026-11-11): gemini-2.5-flash returned 404 for new users, gemini-3.8-flash
+# returned 503 (overloaded), and gemini-3.6-flash hit the free limit of 20 requests per day.
+DEFAULT_MODEL = "gemini-3.5-flash-lite"
 REQUEST_TIMEOUT_MS = 90_000  # a hung request must fail (and be retried), not block forever
 
 

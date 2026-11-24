@@ -2,7 +2,7 @@
 
 import unittest
 
-from src.pipeline import decide_recommendation
+from src.pipeline import OutcomeJudgment, align_judgments, decide_recommendation
 from src.quotes import check_quotes, quote_in_source
 
 SOURCE = "Students learn “dynamic programming” and graph algorithms.\nThe course   covers sorting—in depth."
@@ -30,6 +30,20 @@ class QuoteTests(unittest.TestCase):
 
     def test_check_quotes_list(self):
         self.assertEqual(check_quotes(["sorting", "made up"], SOURCE), [True, False])
+
+
+class AlignTests(unittest.TestCase):
+    @staticmethod
+    def j(n):
+        return OutcomeJudgment(outcome_number=n, verdict="none", rwth_quotes=[], penn_quotes=[], reasoning="")
+
+    def test_reordered_and_missing(self):
+        aligned = align_judgments(3, [self.j(3), self.j(1)])
+        self.assertEqual([a.outcome_number if a else None for a in aligned], [1, None, 3])
+
+    def test_duplicates_and_out_of_range_ignored(self):
+        aligned = align_judgments(2, [self.j(1), self.j(1), self.j(5), self.j(0)])
+        self.assertEqual([a.outcome_number if a else None for a in aligned], [1, None])
 
 
 class RecommendationRuleTests(unittest.TestCase):
